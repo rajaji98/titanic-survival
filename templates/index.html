@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <h2><p style="color:darkslategray;">Enter details : </p> </h2>
+        <form action="/predict", method="post">
+            <input type="text", name="Pclass", placeholder="Pclass", required = 'required' />
+            <br><br>
+            <input type="text", name="Age" placeholder="Age" required="required"><br><br>
+            <input type="text", name="Fare" placeholder="Fare"  required="required"><br><br>
+            <input type="text", name="Sex_male" placeholder="Sex_male"  required="required"><br><br>
+            <input type="text", name="Name_Miss" placeholder="Name_Miss" required="required"><br><br>
+            <input type="text", name="Name_Mr" placeholder="Name_Mr" required="required"><br><br>
+            <input type="text", name="Name_Mrs" placeholder="Name_Mrs" required=" required"><br><br>
+            <input type="text", name="Name_rare" placeholder="Name_rare" required="required"><br><br>
+            <input type="text", name="Embarked_Q" placeholder="Embarked_Q" required="required"><br><br>
+            <input type="text", name="Embarked_S" placeholder="Embarked_S" required=" required"><br><br>
+            <input type="text", name="Family_Members" placeholder="Family_Members" required="required"><br><br>
+            <input type="text", name="IsAlone" placeholder="IsAlone" required="required"><br><br>
+           <br><br>
+            <input type="submit", value="Predict">
+        </form>
+        <br>
+        <h2>the prediction is {{result}}</h2>
+        <br>
+    </body>
+</html>
