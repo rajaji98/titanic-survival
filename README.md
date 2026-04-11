@@ -17,7 +17,7 @@ The goal is to build a model that answers:
 
 ## 🧠 Model Used
 
-* Logistic Regression / Random Forest *(update this based on your model)*
+* Voting Classifer(Logistic Regression , Random Forest and SVC) *
 
 ---
 
@@ -34,7 +34,7 @@ The goal is to build a model that answers:
 
 ## ⚙️ Technologies Used
 
-* Python 🐍
+* Python 
 * Pandas
 * NumPy
 * Scikit-learn
@@ -44,7 +44,7 @@ The goal is to build a model that answers:
 
 ## 📈 Model Performance
 
-* Accuracy: **XX%** *(update your accuracy here)*
+* Accuracy: **70%** *
 
 ---
 
