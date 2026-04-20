@@ -70,7 +70,7 @@ titanic-survival/
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/YOUR-USERNAME/titanic-survival.git
+git clone https://github.com/YOUR/rajaji98-survival.git
 cd titanic-survival
 ```
 
