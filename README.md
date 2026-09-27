@@ -57,9 +57,11 @@ titanic-survival/
 ├── Titanic_Survival.ipynb
 ├── templates/
 │   └── index.html
+├── static/
+│   └── style.css
 ├── requirements.txt
 ├── .gitignore
-├── input data.png
+├── input.png
 ├── output.png
 ```
 
@@ -94,11 +96,15 @@ http://127.0.0.1:5000/
 
 ---
 
-## 📷 Output Screenshots
+## 📷 Screenshots
 
-* Input Page
-* Prediction Result
+### Input
 
+![Titanic Survival Prediction Input](input.png)
+
+### Output
+
+![Titanic Survival Prediction Output](output.png)
 ---
 
 ## 📌 Dataset

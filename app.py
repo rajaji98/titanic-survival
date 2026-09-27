@@ -7,6 +7,7 @@ from flask import Flask, render_template, request,redirect, url_for
 app = Flask(__name__)
 
 #load the modell
+scaler = pickle.load(open('scaler.sav', 'rb'))
 model = pickle.load(open('savedmodel.sav', 'rb'))
 
 
@@ -38,7 +39,7 @@ def predict():
     Family_Members = float(request.form['Family_Members'])
     IsAlone = float(request.form['IsAlone'])
 
-    result = model.predict([[
+    input_data = [[
         Pclass,
         Age,
         Fare,
@@ -51,17 +52,21 @@ def predict():
         Embarked_S,
         Family_Members,
         IsAlone
-    ]])[0]
+    ]]
+
+    input_scaled = scaler.transform(input_data)
+
+    result = model.predict(input_scaled)[0]
 
     if result == 1:
-        res = "The person survived 🚢"
+            res = "The person survived 🚢"
     else:
-        res = "The person died"
+            res = "The person died"
 
     return render_template(
-        'index.html',
-        result=res
-    )
+            'index.html',
+            result=res
+        )
  
 
 if __name__ == '__main__':
